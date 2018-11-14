@@ -49,12 +49,12 @@ class ParentalControlServiceSpec extends FlatSpec with MockitoSugar {
     def parentalControlLevel: String = "u"
     val service = mock[MovieService]
 
-    when(service.getParentalControlLevel(movieId)).thenReturn(Failure(new TitleNotFoundException("You fucked up")))
+    when(service.getParentalControlLevel(movieId)).thenReturn(Try("r18"))
 
     def parentalControl: ParentalControlService = new ParentalControlService(movieId, parentalControlLevel, service)
     val result = parentalControl.resolveParentControl()
 
-    assert(result == true)
+    assert(result == false)
   }
 
   it should "be able to handle a failure when movieId isn't available." in {
