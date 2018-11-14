@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mParentalControlServiceSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Parental control service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should validate the parental rating from the movie service when the parental control is equal to the movie rating[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should validate the parental rating from the movie service when the parental control is more than the movie rating[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should validate the parental rating from the movie service when the parental control is less than the movie rating[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should validate the parental control level when the input is lowercase[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be able to handle a failure when movieId isn't available.[0m[0m
